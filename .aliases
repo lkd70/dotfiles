@@ -1,0 +1,70 @@
+
+# progress bars for cp/mv
+alias cp="rsync -r --progress"
+alias mv="rsync -aP --remove-source-files"
+
+# Override default programs
+alias kill=fkill
+alias la=ls -a
+
+# common stuff
+alias \$="" # Escape annoying "$" when copy/pasting from the web
+alias ytdl="youtube-dl"
+webm() {
+	ffmpeg -i $1 -vcodec libvpx-vp9 -b:v 1M -acodec libvorbis $2.webm
+}
+
+# reload shell config for zsh
+alias reload="source ~/.zshrc"
+
+# cd shortcuts
+alias home="cd ~/"
+alias desktop="cd ~/Desktop"
+alias downloads="cd ~/Downloads"
+alias up="cd .."
+alias ..="cd .."
+mk ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
+
+# windows noob
+alias cls="clear"
+alias cl=cls
+alias c=cls
+
+# fun
+alias weather="curl wttr.in/Bury,Manchester"
+alias fucking="sudo"
+
+# date/time
+alias now='date +"%T"'
+alias time=now
+alias date='date +"%d-%m-%Y"'
+
+# list all active ports
+alias ports='netstat -tulanp'
+
+# installers
+alias install="pkg -y install"
+alias ins=install
+alias update="sudo apt-get update"
+alias upgrade="sudo apt-get upgrade"
+
+# wget with autoresume
+alias wget='wget -c'
+
+# node
+alias npmg="sudo npm -g install"
+alias npmi="npm install"
+alias npmu="npm upgrade"
+alias yarni="yarn add"
+alias yarnu="yarn upgrade"
+alias yarnr="yarn remove"
+alias yarng="yarn global add"
+
+#git
+alias clone="git clone"
+alias pull="git pull"
+alias push="git push origin master"
