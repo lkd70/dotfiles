@@ -35,7 +35,6 @@ alias cl=cls
 alias c=cls
 
 # fun
-alias weather="curl wttr.in/Bury,Manchester"
 alias fucking="sudo"
 
 # date/time
